@@ -3,8 +3,7 @@
 	include_once './includes/config.php';
 
 	//this query is to select all data from the database 
-	$wizQuery = "SELECT * FROM wizardRecords";
-	
+	$wizQuery = "SELECT * FROM wizardrecords";	
 	$data = selectWizards($wizQuery);
 
 ?>

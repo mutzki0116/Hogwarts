@@ -5,7 +5,7 @@
 
 	if(isset($_GET['wizardId'])){
 		$wiz_id = $_GET['wizardId'];
-		$wizQuery = "SELECT * FROM wizardRecords WHERE wizard_id = '".$wiz_id."'";
+		$wizQuery = "SELECT * FROM wizardrecords WHERE wizard_id = '".$wiz_id."'";
 		$data = selectWizards($wizQuery);
 	}
 	if(isset($_POST['submitbutton'])){
@@ -17,7 +17,7 @@
 	$f = $_POST['address2'];
 	$g = $_POST['hogwarts'];
 	
-	$wizQuery = "UPDATE wizardRecords SET wizard_fname= :firstname,wizard_lname=:lastname,wizard_mname=:middlename,birthdate=:bday,address1=:addone,address2=:addtwo,house=:haws WHERE wizard_id = '".$wiz_id."'";
+	$wizQuery = "UPDATE wizardrecords SET wizard_fname= :firstname,wizard_lname=:lastname,wizard_mname=:middlename,birthdate=:bday,address1=:addone,address2=:addtwo,house=:haws WHERE wizard_id = '".$wiz_id."'";
 	
 	$update = updateWizard($wizQuery, [
 			['aray' => ':firstname', 'value' => $a],
