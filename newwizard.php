@@ -16,6 +16,15 @@
 		$wizQuery = "INSERT INTO wizardRecords(wizard_fname,wizard_lname,wizard_mname, birthdate, address1, address2, house, username, password) VALUES(:fname, :lname, :mname, :bday1, :addr1, :addr2, :haws,:user,:pass);";	
 		$pdo = getConnection();
 		$wizResult = $pdo->prepare($wizQuery);
+    	$wizResult->bindParam(':fname', $firstname);
+    	$wizResult->bindParam(':lname', $lname);
+    	$wizResult->bindParam(':mname', $mname);
+    	$wizResult->bindParam(':bday1', $bday1);	
+		$wizResult->bindParam(':addr1', $addr1);
+    	$wizResult->bindParam(':addr2', $addr2);
+		$wizResult->bindParam(':haws', $haws);
+    	$wizResult->bindParam(':user', $user);
+		$wizResult->bindParam(':pass', $pass);
 		$wizResult->execute([':fname'=>$fname,':lname'=>$lname,':mname'=>$mname,':bday1'=>$bday1,':addr1'=>$addr1,':addr2'=>$addr2,':haws'=>$haws,':user'=>$user,':pass'=>$pass]);
 		header("Location: index.php?newUserAdded");
 
