@@ -24,7 +24,6 @@
 			header('Location: viewwizards.php?wizardUpdatedSuccessfully');
 		}
 	}
-
 ?>
 
 
