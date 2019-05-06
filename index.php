@@ -4,8 +4,13 @@
 	if(isset($_POST['submitbutton'])){
 		$user = $_POST['userName'];
 		$pass = $_POST['passWord'];
-		$wizQuery = "SELECT * FROM wizardRecords WHERE username = '".$user."' && password = '".$pass."'";
-		$data = selectWizards($wizQuery);
+		$wizQuery = "SELECT * FROM wizardRecords WHERE username = :username && password = :password ";
+		
+		$data = selectWizards($wizQuery, [
+			['name' => ':username', 'value' => $user],
+			['name' => ':password', 'value' => $pass],
+		]);
+
 		foreach ($data as $wizInfo): 
 		if($data > 0){
 			if($wizInfo['role'] == 'user'){

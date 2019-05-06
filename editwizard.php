@@ -17,12 +17,19 @@
 	$f = $_POST['address2'];
 	$g = $_POST['hogwarts'];
 	
-	$wizQuery = "UPDATE wizardRecords SET wizard_fname='".$a."',wizard_lname='".$b."',wizard_lname='".$c."',birthdate='".$d."',address1='".$e."',address2='".$f."',house='".$g."' WHERE wizard_id = '".$wiz_id."'";
+	$wizQuery = "UPDATE wizardRecords SET wizard_fname= :firstname,wizard_lname=:lastname,wizard_mname=:middlename,birthdate=:bday,address1=:addone,address2=:addtwo,house=:haws WHERE wizard_id = '".$wiz_id."'";
 	
-	$update = updateWizard($wizQuery);
-		if($update != 0){
+	$update = updateWizard($wizQuery, [
+			['aray' => ':firstname', 'value' => $a],
+			['aray' => ':lastname', 'value' => $b],
+			['aray' => ':middlename', 'value' => $c],
+			['aray' => ':bday', 'value' => $d],
+			['aray' => ':addone', 'value' => $e],
+			['aray' => ':addtwo', 'value' => $f],
+			['aray' => ':haws', 'value' => $g],
+		]);
 			header('Location: viewwizards.php?wizardUpdatedSuccessfully');
-		}
+	
 	}
 ?>
 
@@ -41,7 +48,7 @@
 	<form action="#" method="POST">
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="firstname1"></label>
+      <label for="firstname1">Firstname</label>
       <input type="text" class="form-control" name="firstname1" value="<?php echo $wizInfo['wizard_fname']; ?>">
     </div>
   </div>
