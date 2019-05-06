@@ -2,7 +2,7 @@
 	session_start();
 	include_once './includes/config.php';
 	$wizId = $_SESSION['wizId'];
-	$wizQuery = "SELECT * FROM wizardRecords WHERE wizard_id = '".$wizId."'";
+	$wizQuery = "SELECT * FROM wizardrecords WHERE wizard_id = '".$wizId."'";
 	$data = selectWizards($wizQuery);
 	
  ?>

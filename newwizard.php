@@ -12,8 +12,7 @@
 		$addr1 = $_POST['address1'];
 		$addr2 = $_POST['address2'];
 		$haws = $_POST['hogwarts'];
-
-		$wizQuery = "INSERT INTO wizardRecords(wizard_fname,wizard_lname,wizard_mname, birthdate, address1, address2, house, username, password) VALUES(:fname, :lname, :mname, :bday1, :addr1, :addr2, :haws,:user,:pass);";	
+		$wizQuery = "INSERT INTO wizardrecords(wizard_fname,wizard_lname,wizard_mname, birthdate, address1, address2, house, username, password) VALUES(:fname, :lname, :mname, :bday1, :addr1, :addr2, :haws,:user,:pass);";	
 		$pdo = getConnection();
 		$wizResult = $pdo->prepare($wizQuery);
     	$wizResult->bindParam(':fname', $firstname);

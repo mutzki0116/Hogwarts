@@ -4,7 +4,7 @@
 	if(isset($_POST['submitbutton'])){
 		$user = $_POST['userName'];
 		$pass = $_POST['passWord'];
-		$wizQuery = "SELECT * FROM wizardRecords WHERE username = :username && password = :password ";
+		$wizQuery = "SELECT * FROM wizardrecords WHERE username = :username && password = :password ";
 		
 		$data = selectWizards($wizQuery, [
 			['name' => ':username', 'value' => $user],
