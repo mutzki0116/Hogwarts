@@ -19,7 +19,7 @@
  ?>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index2.php">Hogwarts University of Witchcrafting and Wizardry</a></li>
+    <li class="breadcrumb-item"><a href="index2.php">Hogwarts College of Witchcrafting and Wizardry</a></li>
   	<li class="breadcrumb-item"><a href="#">Interests</a></li>
 <!--     <li class="breadcrumb-item"><a href="viewwizards.php">View List of Wizards</a></li>
  --> 
