@@ -7,3 +7,6 @@
 	top: 20%;
 	border-radius:  60px 60px 60px 60px   ; 
 }
+.userButton{
+	float: right;
+}
