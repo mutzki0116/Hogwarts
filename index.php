@@ -52,7 +52,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Hogwarts University of Witchcrafting and Wizardry</a></li>
 <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success form-control mr-2" type="submit">Search</button>
+      <button class="btn btn-outline-success mr-2" type="submit">Search</button>
     </form>
 
 <!--   	<li class="breadcrumb-item"><a href="newwizard.php">Add New Wizard</a></li>
