@@ -49,7 +49,6 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Hogwarts University of Witchcrafting and Wizardry</a></li>
   	<li class="breadcrumb-item"><a href="#">Add New Wizard</a></li>
-    <li class="breadcrumb-item"><a href="viewwizards.php">View List of Wizards</a></li>
   </ol>
 </nav>
 

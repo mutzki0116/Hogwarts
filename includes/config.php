@@ -37,6 +37,7 @@
 	function expelWizard($wizQuery){
 		$pdo = getConnection();
 		$stmt = $pdo->prepare($wizQuery);
+		$stmt->bindParam($wizQuery);
 		return $stmt->execute();
 	}
 		
