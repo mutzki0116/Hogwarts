@@ -52,7 +52,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Hogwarts University of Witchcrafting and Wizardry</a></li>
 	<form class="form-inline userButton">
-      <button class="btn btn-outline-success " type="submit">Logout</button>
+      <button class="btn btn-outline-success " type="submit"><?php echo $wizInfo['wizard_fname']; ?></button>
     </form>
 
 <!--   	<li class="breadcrumb-item"><a href="newwizard.php">Add New Wizard</a></li>
