@@ -51,10 +51,11 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Hogwarts University of Witchcrafting and Wizardry</a></li>
-    <form class="form-inline my-2 my-lg-0">
+<form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+
 <!--   	<li class="breadcrumb-item"><a href="newwizard.php">Add New Wizard</a></li>
     <li class="breadcrumb-item"><a href="viewwizards.php">View List of Wizards</a></li> -->
   </ol>
