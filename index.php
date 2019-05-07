@@ -51,8 +51,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Hogwarts University of Witchcrafting and Wizardry</a></li>
-	<form class="form-inline my-4 my-lg-0 userButton">
-      <button class="btn btn-outline-success navbar-text mr-2" type="submit">Edit</button>
+	<form class="form-inline userButton">
+      <button class="btn btn-outline-success " type="submit">Logout</button>
     </form>
 
 <!--   	<li class="breadcrumb-item"><a href="newwizard.php">Add New Wizard</a></li>
